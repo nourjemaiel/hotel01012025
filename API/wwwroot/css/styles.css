@@ -1,0 +1,59 @@
+﻿/* Custom Colors for the Palette */
+:root {
+    --teal: #4DB6AC; /* Lighter Teal */
+    --dark-teal: #26A69A; /* Lighter Dark Teal */
+    --light-brown: #FFEBEE; /* Light Beige */
+    --light-teal: #A7C6C5; /* Light Teal */
+    --cold-gray: #E0F2F1; /* Light Cold Gray */
+}
+
+/* Applying custom colors to header */
+header {
+    background-color: var(--teal); /* Lighter Teal for header */
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white; /* White navbar */
+}
+
+    .navbar a {
+        color: var(--teal); /* Lighter Teal text for links */
+    }
+
+        .navbar a:hover {
+            color: var(--light-brown); /* Light Beige on hover */
+        }
+
+/* Table header color */
+.table thead {
+    background-color: var(--light-teal); /* Lighter Teal for table header */
+    color: black;
+}
+
+/* Button color */
+.btn-teal {
+    background-color: var(--teal);
+    color: white;
+    border: none;
+}
+
+    .btn-teal:hover {
+        background-color: var(--dark-teal);
+    }
+
+/* Footer color */
+footer {
+    background-color: var(--cold-gray); /* Light Cold Gray footer */
+    color: var(--teal);
+}
+
+/* Custom Text styling */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}

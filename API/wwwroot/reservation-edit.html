@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Réservation</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery and custom JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/reservation-edit.js" defer></script>
+
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styling for the title */
+        .page-title {
+            font-family: 'Playfair Display', serif; /* Custom font for the title */
+            font-size: 3rem; /* Larger font size */
+            color: #004D40; /* Dark teal color */
+            text-align: center; /* Center the text */
+             /* Add some margin to the top */
+        }
+        /* Custom Button */
+        .btn-teal {
+            background-color: #004D40; /* Dark Teal */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem; /* Smaller font size */
+            padding: 8px 20px; /* Adjusted padding for smaller button */
+            text-transform: uppercase;
+        }
+
+            .btn-teal:hover {
+                background-color: #00796B; /* Slightly lighter Teal for hover effect */
+                color: white;
+            }
+
+    </style>
+</head>
+<body>
+
+    <main class="container mt-4">
+        <!-- Centered Title -->
+        <h2 class="page-title">Modifier la Réservation</h2>
+
+        <form id="reservationForm">
+            <input type="hidden" id="reservationId">
+
+            <div class="form-group">
+                <label for="clientSelect">Client :</label>
+                <select id="clientSelect" class="form-control" required></select>
+            </div>
+
+            <div class="form-group">
+                <label for="chambreSelect">Chambre :</label>
+                <select id="chambreSelect" class="form-control" required></select>
+            </div>
+
+            <div class="form-group">
+                <label for="dateArrivee">Date d'arrivée :</label>
+                <input type="date" id="dateArrivee" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dateDepart">Date de départ :</label>
+                <input type="date" id="dateDepart" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nombrePersonnes">Nombre de personnes :</label>
+                <input type="number" id="nombrePersonnes" class="form-control" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="typePaiement">Type de paiement :</label>
+                <select id="typePaiement" class="form-control" required>
+                    <option value="especes">Espèces</option>
+                    <option value="par carte">Par carte</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-teal">Mettre à jour</button>
+        </form>
+        <br />
+        <a href="reservations-list.html" class="btn btn-teal">Retour à la liste des réservations</a>
+    </main>
+
+    <!-- Footer (optional) -->
+    <footer class="bg-light-cold-gray text-center p-3 mt-5">
+        <p>&copy; 2025 Système de gestion de l'hôtel</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Réservations</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Your custom styles -->
+</head>
+<body>
+    <header class="bg-light-teal text-white p-3">
+        <div class="container">
+            <h1>Liste des Réservations</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="home.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="personnel-list.html">Liste des personnel</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="clients-list.html">Liste des Clients</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="chambres-list.html">Liste des Chambres</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-4">
+        <h2>Réservations en Cours</h2>
+
+        <table class="table table-striped table-bordered">
+            <thead class="thead-light-teal">
+                <tr>
+                    <th>ID</th>
+                    <th>Date d'Arrivée</th>
+                    <th>Date de Départ</th>
+                    <th>Nombre de Personnes</th>
+                    <th>Type de Paiement</th>
+                    <th>Montant Total</th>
+                    <th>Numéro de Chambre</th>
+                    <th>Client</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="reservationTableBody">
+                <!-- Réservation data will be inserted here -->
+            </tbody>
+        </table>
+
+        <div>
+            <a href="reservation-add.html" class="btn btn-teal">Ajouter une Réservation</a>
+        </div>
+    </main>
+
+    <footer class="bg-light-cold-gray text-center p-3 mt-5">
+        <p>&copy; 2025 Système de gestion de l'hôtel</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/reservations-list.js"></script>
+</body>
+</html>

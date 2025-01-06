@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\WebApplication2\hotel.BLL.Contract\hotel.BLL.Contract.csproj" />
+    <ProjectReference Include="..\..\WebApplication2\hotel.Entities\hotel.Entities.csproj" />
+    <ProjectReference Include="..\hotel.BLL\hotel.BLL.csproj" />
+    <ProjectReference Include="..\hotel.ViewModel\hotel.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>
